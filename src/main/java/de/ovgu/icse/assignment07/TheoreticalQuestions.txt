@@ -1,0 +1,11 @@
+07-01: Graph Representation
+*Please answer every theoretical question regarding this task here*
+
+
+
+
+
+07-03: Breadth-First and Depth-First Search
+*Please answer every theoretical question regarding this task here*
+
+
