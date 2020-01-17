@@ -1,14 +1,13 @@
 package de.ovgu.icse.assignment07;
 
-import static org.junit.Assert.*;
-
-import org.junit.jupiter.*;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class MatrixGraphTest {
 	MatrixGraph graph = new MatrixGraph();
-       int[][] matrix = new int[][]{{1, 1, 0, 1, 0}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}, {0, 0, 0, 0, 0}, {1, 1, 1, 1, 1}};
+	int[][] matrix = new int[][]{{1, 1, 0, 1, 0}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}, {0, 0, 0, 0, 0}, {1, 1, 1, 1, 1}};
 
 	@Test
 	public final void inDegreeTest() {
@@ -18,7 +17,7 @@ public class MatrixGraphTest {
 		assertEquals(2, graph.inDegree(3, matrix));
 		assertEquals(3, graph.inDegree(4, matrix));
 	}
-	
+
 	@Test
 	public final void outDegreeTest() {
 		assertEquals(3, graph.outDegree(0, matrix));
@@ -27,7 +26,7 @@ public class MatrixGraphTest {
 		assertEquals(0, graph.outDegree(3, matrix));
 		assertEquals(5, graph.outDegree(4, matrix));
 	}
-	
+
 	@Test
 	public final void adjacentTest() {
 		assertEquals(3, graph.adjacent(0, matrix).size());
